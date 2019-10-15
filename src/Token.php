@@ -14,6 +14,13 @@ class Token extends Model
     protected $table = 'oauth_access_tokens';
 
     /**
+     * The connection name for the model.
+     *
+     * @var string
+     */
+    protected $connection = 'passport_database_connection';
+
+    /**
      * Indicates if the IDs are auto-incrementing.
      *
      * @var bool

@@ -14,6 +14,13 @@ class Client extends Model
     protected $table = 'oauth_clients';
 
     /**
+     * The connection name for the model.
+     *
+     * @var string
+     */
+    protected $connection = 'passport_database_connection';
+
+    /**
      * The guarded attributes on the model.
      *
      * @var array

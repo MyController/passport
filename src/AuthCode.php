@@ -14,6 +14,13 @@ class AuthCode extends Model
     protected $table = 'oauth_auth_codes';
 
     /**
+     * The connection name for the model.
+     *
+     * @var string
+     */
+    protected $connection = 'passport_database_connection';
+
+    /**
      * The guarded attributes on the model.
      *
      * @var array

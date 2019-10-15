@@ -11,6 +11,24 @@
 
 Laravel Passport is an OAuth2 server and API authentication package that is simple and enjoyable to use.
 
+## 本分支的修改内容
+
+为 Passport 定义了专用的数据库连接名 `passport_database_connection` , 需要自行在配置文件 config/database.php 的  数组中配置.
+
+    ```
+    'connections' => [
+
+        ...
+
+        'passport_database_connection' => [
+            ...
+        ],
+        
+        ...
+        
+    ],
+    ```
+    
 ## Official Documentation
 
 Documentation for Passport can be found on the [Laravel website](http://laravel.com/docs/master/passport).
